@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: black;
+}
+
+@layer components {
+    .page-btn {
+        @apply w-8 h-8 bg-blue-600 rounded-md disabled:bg-blue-300
+    }
+}
