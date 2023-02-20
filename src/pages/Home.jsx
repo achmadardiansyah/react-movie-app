@@ -18,8 +18,6 @@ const Home = () => {
 
     const banner = bannerData?.results?.[Math.round(Math.random()*bannerData?.results?.length)];
 
-    console.log(searchResults)
-
     return ( 
         <div className=''>
             {!input && (<Banner banner={banner} />)}

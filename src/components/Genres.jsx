@@ -14,8 +14,6 @@ const Genres = () => {
     const dep = [selectedOption, page]
     const [data, totalPages] = useFetch(fetchUrl('movie', selectedOption, page), dep)
 
-    console.log(data?.results)
-
     return ( 
         <div className="px-3 py-2">
             <select className="p-2 text-xl my-3 outline-none rounded-sm bg-gray-700 text-yellow-50" value={selectedOption} onChange={e => setSelectedOption(e.target.value)}>
